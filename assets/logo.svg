@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" fill="none">
+  <defs>
+    <linearGradient id="metallic" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8eef5"/>
+      <stop offset="40%" stop-color="#9aa6b3"/>
+      <stop offset="60%" stop-color="#5a6473"/>
+      <stop offset="100%" stop-color="#c4ccd6"/>
+    </linearGradient>
+    <linearGradient id="pixelBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="forgeBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- P letter - metallic with pixel dissolve -->
+  <g transform="translate(8, 8)">
+    <!-- Main P body -->
+    <path d="M4 4 H36 V20 H24 V60 H16 V20 H4 Z" fill="url(#metallic)" stroke="#3a4453" stroke-width="0.5"/>
+    <!-- Pixel blocks dissolving from P -->
+    <rect x="36" y="6" width="4" height="4" fill="url(#pixelBlue)" opacity="0.9"/>
+    <rect x="40" y="4" width="3" height="3" fill="url(#pixelBlue)" opacity="0.7"/>
+    <rect x="38" y="12" width="3" height="3" fill="#06b6d4" opacity="0.85"/>
+    <rect x="42" y="14" width="2" height="2" fill="#3b82f6" opacity="0.6"/>
+    <rect x="2" y="60" width="3" height="3" fill="url(#pixelBlue)" opacity="0.8"/>
+    <rect x="0" y="64" width="2" height="2" fill="#06b6d4" opacity="0.6"/>
+    <rect x="6" y="64" width="3" height="3" fill="url(#pixelBlue)" opacity="0.7"/>
+    <rect x="14" y="62" width="2" height="2" fill="#3b82f6" opacity="0.5"/>
+    <rect x="44" y="8" width="2" height="2" fill="#06b6d4" opacity="0.6"/>
+  </g>
+
+  <!-- PIXEL FORGE wordmark -->
+  <text x="64" y="48" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#ffffff">PIXEL</text>
+  <text x="135" y="48" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="url(#forgeBlue)">FORGE</text>
+</svg>

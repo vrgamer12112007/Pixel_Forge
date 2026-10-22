@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1c1917" />
+  <meta name="description" content="Lumière Salon & Spa — Chennai's most luxurious hair, skin, and spa experience. Award-winning stylists, premium products, serene atmosphere." />
+  <title>Lumière Salon &amp; Spa — Where beauty meets artistry</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62z'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="nav__logo-icon">
+          <path d="M12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62z"/>
+        </svg>
+        <div>
+          <span class="nav__logo-text">Lumière</span>
+          <span class="nav__logo-sub">Salon &amp; Spa</span>
+        </div>
+      </a>
+
+      <nav class="nav__links" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#packages">Packages</a>
+        <a href="#artists">Artists</a>
+        <a href="#contact">Visit</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="#booking" class="btn btn--primary">Book now</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <div class="mobile-menu__head">
+        <span class="nav__logo-text">Lumière</span>
+        <button class="nav__toggle nav__toggle--close" id="navClose" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Mobile">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#packages">Packages</a>
+        <a href="#artists">Our Artists</a>
+        <a href="#contact">Visit Us</a>
+        <a href="#booking" class="btn btn--primary">Book appointment</a>
+        <a href="tel:+914455551234" class="btn btn--ghost">Call +91 44 5555 1234</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__pattern"></div>
+      <div class="hero__glow"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="dot"></span>
+          Now booking for the festive season
+        </div>
+        <h1>Where beauty<br><em>meets artistry.</em></h1>
+        <p>An immersive sanctuary of style and serenity. Award-winning stylists, premium products, and an experience designed to make you feel like the most beautiful version of yourself.</p>
+
+        <div class="hero__ctas">
+          <a href="#booking" class="btn btn--primary btn--lg">
+            Book your visit
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+          </a>
+          <a href="#services" class="btn btn--ghost btn--lg">Explore services</a>
+        </div>
+
+        <div class="hero__trust">
+          <div class="hero__rating">
+            <span class="stars">★★★★★</span>
+            <span>4.9 from 1,200+ guests</span>
+          </div>
+          <div class="hero__divider"></div>
+          <div class="hero__awards">
+            <strong>Best Salon 2024</strong>
+            <span>Chennai Lifestyle Awards</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero-frame">
+          <div class="hero-frame__inner">
+            <div class="hero-frame__icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62z"/></svg>
+            </div>
+            <p class="hero-frame__quote">"Beauty begins the moment you decide to be yourself."</p>
+            <p class="hero-frame__author">— Lumière philosophy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-badge">Our services</span>
+        <h2>A symphony of services<br>for every part of you</h2>
+        <p>From precision haircuts to indulgent spa rituals, every service at Lumière is performed by a senior artist using premium, globally-sourced products.</p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service-card">
+          <div class="service-card__num">01</div>
+          <h3>Hair</h3>
+          <p>Cuts, color, keratin, balayage, and treatments by senior stylists trained at L'Oréal &amp; Wella academies.</p>
+          <ul>
+            <li>Cut &amp; style — ₹1,200+</li>
+            <li>Global color — ₹3,500+</li>
+            <li>Balayage — ₹6,500+</li>
+            <li>Keratin treatment — ₹5,000+</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__num">02</div>
+          <h3>Skin &amp; Face</h3>
+          <p>Facials, clean-ups, peels, and treatments using premium brands like Dermalogica and Estée Lauder.</p>
+          <ul>
+            <li>Signature facial — ₹2,500+</li>
+            <li>Hydra glow facial — ₹4,000+</li>
+            <li>Chemical peel — ₹3,500+</li>
+            <li>Bridal glow — ₹8,000+</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__num">03</div>
+          <h3>Nails</h3>
+          <p>Manicures, pedicures, gel extensions, and nail art by certified nail technicians.</p>
+          <ul>
+            <li>Classic mani-pedi — ₹1,500+</li>
+            <li>Gel polish — ₹1,800+</li>
+            <li>Extensions — ₹2,500+</li>
+            <li>Nail art — from ₹500</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__num">04</div>
+          <h3>Spa &amp; Massage</h3>
+          <p>Therapeutic and relaxation massages, body scrubs, and rituals in our private spa suites.</p>
+          <ul>
+            <li>Aromatherapy massage — ₹3,000+</li>
+            <li>Deep tissue — ₹3,500+</li>
+            <li>Body scrub — ₹2,500+</li>
+            <li>Couple's ritual — ₹7,000+</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__num">05</div>
+          <h3>Makeup</h3>
+          <p>HD, airbrush, and bridal makeup by artists featured in Vogue India and bridal magazines.</p>
+          <ul>
+            <li>Party makeup — ₹4,500+</li>
+            <li>HD engagement — ₹7,500+</li>
+            <li>Bridal — ₹15,000+</li>
+            <li>Pre-bridal package — ₹25,000+</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__num">06</div>
+          <h3>Bridal</h3>
+          <p>Complete bridal experiences — hair, makeup, mehndi, and skin prep for the wedding of your dreams.</p>
+          <ul>
+            <li>Bridal trial — Free</li>
+            <li>Wedding day — ₹25,000+</li>
+            <li>Reception look — ₹12,000+</li>
+            <li>Full bridal package — ₹75,000+</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-badge">Our work</span>
+        <h2>A glimpse of<br>our craft</h2>
+        <p>Every look is a story. Here are some of our recent transformations.</p>
+      </div>
+
+      <div class="gallery__grid">
+        <div class="gallery-item gallery-item--tall" style="background: linear-gradient(135deg, #1c1917, #d4af37);">
+          <span class="gallery-item__label">Bridal look</span>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg, #1c1917, #b8860b);">
+          <span class="gallery-item__label">Balayage</span>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg, #292524, #cd853f);">
+          <span class="gallery-item__label">Facial glow</span>
+        </div>
+        <div class="gallery-item gallery-item--wide" style="background: linear-gradient(135deg, #1c1917, #8b6f1f);">
+          <span class="gallery-item__label">Spa ritual</span>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg, #292524, #daa520);">
+          <span class="gallery-item__label">Nail art</span>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg, #1c1917, #d4af37);">
+          <span class="gallery-item__label">Evening makeup</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section class="section packages" id="packages">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-badge">Curated packages</span>
+        <h2>Indulge in<br>our signature rituals</h2>
+        <p>Bundled experiences at exceptional value — perfect for gifting or treating yourself.</p>
+      </div>
+
+      <div class="packages__grid">
+        <article class="package-card">
+          <div class="package-card__head">
+            <h3>The Refresh</h3>
+            <p>A quick pick-me-up for the busy professional.</p>
+          </div>
+          <div class="package-card__price">
+            <span class="package-card__amount">₹3,500</span>
+            <span class="package-card__note">90 min</span>
+          </div>
+          <ul>
+            <li>Hair wash &amp; blow-dry</li>
+            <li>Express facial</li>
+            <li>Manicure</li>
+            <li>Tea &amp; welcome drink</li>
+          </ul>
+          <a href="#booking" class="btn btn--ghost btn--block">Book this</a>
+        </article>
+
+        <article class="package-card package-card--featured">
+          <div class="package-card__ribbon">Most loved</div>
+          <div class="package-card__head">
+            <h3>The Retreat</h3>
+            <p>Half-day of pure indulgence.</p>
+          </div>
+          <div class="package-card__price">
+            <span class="package-card__amount">₹7,500</span>
+            <span class="package-card__note">4 hours</span>
+          </div>
+          <ul>
+            <li>Hair cut &amp; style</li>
+            <li>Signature facial</li>
+            <li>Mani-pedi with gel</li>
+            <li>Aromatherapy massage</li>
+            <li>Light lunch included</li>
+          </ul>
+          <a href="#booking" class="btn btn--primary btn--block">Book this</a>
+        </article>
+
+        <article class="package-card">
+          <div class="package-card__head">
+            <h3>The Royal Bride</h3>
+            <p>For the bride who deserves everything.</p>
+          </div>
+          <div class="package-card__price">
+            <span class="package-card__amount">₹45,000</span>
+            <span class="package-card__note">Multi-day</span>
+          </div>
+          <ul>
+            <li>Pre-bridal skin prep (4 sessions)</li>
+            <li>Hair color &amp; treatment</li>
+            <li>Wedding day makeup &amp; hair</li>
+            <li>Reception look</li>
+            <li>Free trial &amp; consultation</li>
+          </ul>
+          <a href="#booking" class="btn btn--ghost btn--block">Book this</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artists -->
+  <section class="artists" id="artists">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-badge">Our artists</span>
+        <h2>Hands that create<br><em>masterpieces</em></h2>
+        <p>Each artist at Lumière is hand-picked, internationally trained, and passionate about their craft.</p>
+      </div>
+
+      <div class="artists__grid">
+        <article class="artist-card">
+          <div class="artist-card__photo" style="background: linear-gradient(135deg, #1c1917, #d4af37);">
+            <span>SR</span>
+          </div>
+          <h3>Sara Reddy</h3>
+          <p class="artist-card__role">Creative Director · Hair</p>
+          <p class="artist-card__bio">15 years. Trained at Vidal Sassoon London. Featured in Vogue India.</p>
+        </article>
+        <article class="artist-card">
+          <div class="artist-card__photo" style="background: linear-gradient(135deg, #292524, #b8860b);">
+            <span>AM</span>
+          </div>
+          <h3>Aisha Mirza</h3>
+          <p class="artist-card__role">Senior · Skin &amp; Makeup</p>
+          <p class="artist-card__bio">10 years. MAC Pro artist. Bridal specialist for 500+ brides.</p>
+        </article>
+        <article class="artist-card">
+          <div class="artist-card__photo" style="background: linear-gradient(135deg, #1c1917, #cd853f);">
+            <span>RK</span>
+          </div>
+          <h3>Riya Kapoor</h3>
+          <p class="artist-card__role">Senior · Spa &amp; Wellness</p>
+          <p class="artist-card__bio">12 years. ITEC-certified. Specializes in therapeutic &amp; Ayurvedic rituals.</p>
+        </article>
+        <article class="artist-card">
+          <div class="artist-card__photo" style="background: linear-gradient(135deg, #292524, #daa520);">
+            <span>PV</span>
+          </div>
+          <h3>Priya Venkat</h3>
+          <p class="artist-card__role">Senior · Nails</p>
+          <p class="artist-card__bio">8 years. CND-certified. Award-winning nail artistry.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="booking__inner">
+        <div class="booking__left">
+          <span class="section-badge">Reserve your moment</span>
+          <h2>Book your<br><em>Lumière experience</em></h2>
+          <p>Choose your service, pick your artist, and select a time that suits you. We'll send a WhatsApp confirmation with all the details. Cancellations free up to 24 hours before.</p>
+          <ul class="booking__perks">
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Complimentary welcome drink
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Free patch test for color services
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Free cancellation up to 24 hrs
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Loyalty rewards on every visit
+            </li>
+          </ul>
+        </div>
+        <form class="booking__form" id="bookingForm">
+          <h3>Reserve your slot</h3>
+          <div class="booking__form-row">
+            <select aria-label="Service" required>
+              <option value="">Choose service *</option>
+              <option>Hair — Cut &amp; style</option>
+              <option>Hair — Color</option>
+              <option>Hair — Treatment</option>
+              <option>Skin — Facial</option>
+              <option>Nails — Mani-pedi</option>
+              <option>Spa — Massage</option>
+              <option>Makeup</option>
+              <option>Bridal — Trial</option>
+              <option>Package</option>
+            </select>
+            <select aria-label="Artist preference">
+              <option value="">Any artist</option>
+              <option>Sara Reddy</option>
+              <option>Aisha Mirza</option>
+              <option>Riya Kapoor</option>
+              <option>Priya Venkat</option>
+            </select>
+          </div>
+          <div class="booking__form-row">
+            <input type="text" placeholder="Full name *" required />
+            <input type="tel" placeholder="Phone number *" required />
+          </div>
+          <div class="booking__form-row">
+            <input type="date" aria-label="Date" required />
+            <select aria-label="Time preference">
+              <option value="">Any time</option>
+              <option>Morning (10 AM – 12 PM)</option>
+              <option>Afternoon (12 – 3 PM)</option>
+              <option>Evening (3 – 7 PM)</option>
+            </select>
+          </div>
+          <textarea placeholder="Notes for your artist (optional)" rows="3"></textarea>
+          <button type="submit" class="btn btn--primary btn--block btn--lg">Confirm booking</button>
+          <p class="booking__note">A confirmation will be sent via WhatsApp within 15 minutes.</p>
+          <div class="booking__success" id="bookingSuccess" hidden>
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="#d4af37"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <h3>Booking requested!</h3>
+            <p>We'll WhatsApp you within 15 minutes to confirm.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-badge">Visit Lumière</span>
+        <h2>Find us in the heart of the city</h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+          </div>
+          <h3>Our boutique</h3>
+          <p>78 Nugambakkam High Road,<br>Chennai, Tamil Nadu 600034</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.25l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+          </div>
+          <h3>Call us</h3>
+          <p><a href="tel:+914455551234">+91 44 5555 1234</a><br><a href="#">WhatsApp</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+          </div>
+          <h3>Hours</h3>
+          <p>Mon – Sat: 10 AM – 8 PM<br>Sunday: By appointment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#home" class="nav__logo">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="nav__logo-icon">
+              <path d="M12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62z"/>
+            </svg>
+            <div>
+              <span class="nav__logo-text">Lumière</span>
+              <span class="nav__logo-sub">Salon &amp; Spa</span>
+            </div>
+          </a>
+          <p>Where beauty meets artistry.<br>Chennai's premier luxury salon &amp; spa.</p>
+        </div>
+        <div class="footer__cta">
+          <a href="#booking" class="btn btn--primary">Book appointment</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Lumière Salon &amp; Spa. Demo site by Pixel Forge.</p>
+        <a href="../../index.html" class="footer__back">← Back to Pixel Forge</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="tel:+914455551234" class="float-call" id="floatCall" aria-label="Call salon">
+    <span class="float-call__pulse"></span>
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.25l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+    <span>Call salon</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

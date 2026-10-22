@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c4a6e" />
+  <meta name="description" content="Aether Medical Clinic — multi-speciality healthcare in Chennai. Book appointments online with leading doctors. Compassionate care, advanced technology." />
+  <title>Aether Medical Clinic — Compassionate Care, Advanced Medicine</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230369a1'%3E%3Cpath d='M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__contact">
+        <a href="tel:+914412345678">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.25l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+          +91 44 1234 5678
+        </a>
+        <a href="mailto:care@aetherclinic.com">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          care@aetherclinic.com
+        </a>
+      </div>
+      <div class="topbar__hours">
+        <span><strong>Open:</strong> Mon–Sat, 8 AM – 9 PM</span>
+        <span class="topbar__emergency">24/7 Emergency</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo">
+        <div class="nav__logo-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+        </div>
+        <div>
+          <div class="nav__logo-text">Aether</div>
+          <div class="nav__logo-sub">Medical Clinic</div>
+        </div>
+      </a>
+
+      <nav class="nav__links" aria-label="Main">
+        <a href="#services">Specialities</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#why">Why Us</a>
+        <a href="#booking">Book</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="#booking" class="btn btn--primary">Book Appointment</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <div class="mobile-menu__head">
+        <span class="nav__logo-text">Aether</span>
+        <button class="nav__toggle nav__toggle--close" id="navClose" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Mobile">
+        <a href="#services">Specialities</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#why">Why Us</a>
+        <a href="#booking">Book Appointment</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+914412345678" class="btn btn--ghost">Call +91 44 1234 5678</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__pattern"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="dot"></span>
+          Now accepting new patients
+        </div>
+        <h1>Your health,<br><span class="hero__accent">our promise.</span></h1>
+        <p>Multi-speciality medical care in the heart of Chennai. Same-day appointments, board-certified doctors, and a patient experience designed around you.</p>
+
+        <div class="hero__ctas">
+          <a href="#booking" class="btn btn--primary btn--lg">
+            Book appointment
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+          </a>
+          <a href="tel:+914412345678" class="btn btn--ghost btn--lg">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.25l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+            Call now
+          </a>
+        </div>
+
+        <div class="hero__trust">
+          <div class="hero__trust-item">
+            <strong>15+</strong>
+            <span>Specialities</span>
+          </div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item">
+            <strong>50k+</strong>
+            <span>Patients served</span>
+          </div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item">
+            <strong>4.9</strong>
+            <span>Patient rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="booking-card">
+          <h3>Quick appointment</h3>
+          <p>Book in 60 seconds</p>
+          <div class="booking-card__form">
+            <select aria-label="Speciality">
+              <option>Choose speciality</option>
+              <option>General Medicine</option>
+              <option>Cardiology</option>
+              <option>Pediatrics</option>
+              <option>Orthopedics</option>
+              <option>Dermatology</option>
+            </select>
+            <input type="text" placeholder="Your name" aria-label="Your name" />
+            <input type="tel" placeholder="Phone number" aria-label="Phone number" />
+            <input type="date" aria-label="Preferred date" />
+            <button class="btn btn--primary btn--block">Check availability</button>
+          </div>
+          <div class="booking-card__note">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            Your data is HIPAA-compliant &amp; secure
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialities -->
+  <section class="section specialities" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-badge">Our specialities</span>
+        <h2>Comprehensive care, all under one roof</h2>
+        <p>From routine check-ups to specialised treatments, our 15+ departments are staffed by experienced doctors using the latest medical technology.</p>
+      </div>
+
+      <div class="specialities__grid">
+        <article class="speciality-card">
+          <div class="speciality-card__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5 2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35z"/></svg>
+          </div>
+          <h3>Cardiology</h3>
+          <p>Heart health screenings, ECG, echo, and consultation with senior cardiologists.</p>
+        </article>
+
+        <article class="speciality-card">
+          <div class="speciality-card__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2c-4.97 0-9 4.03-9 9 0 4.32 3.04 7.93 7.09 8.79V22h3.82v-2.21C18.96 18.93 22 15.32 22 11c0-4.97-4.03-9-9-9zm-1 16.93C8.34 18.16 6 15.36 6 12h2c0 2.21 1.79 4 4 4v2.93z"/></svg>
+          </div>
+          <h3>Pediatrics</h3>
+          <p>Newborn care, vaccinations, growth tracking, and child wellness check-ups.</p>
+        </article>
+
+        <article class="speciality-card">
+          <div class="speciality-card__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M21 3H3c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h6l-2 2v2h10v-2l-2-2h6c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 14H3V5h18v12z"/></svg>
+          </div>
+          <h3>Orthopedics</h3>
+          <p>Bone &amp; joint care, sports injury, physiotherapy, and minimally invasive surgery.</p>
+        </article>
+
+        <article class="speciality-card">
+          <div class="speciality-card__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+          </div>
+          <h3>General Medicine</h3>
+          <p>Day-to-day health concerns, fevers, infections, and chronic condition management.</p>
+        </article>
+
+        <article class="speciality-card">
+          <div class="speciality-card__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <h3>Dermatology</h3>
+          <p>Skin, hair, and nail care — acne, hair fall, cosmetic procedures, and laser treatments.</p>
+        </article>
+
+        <article class="speciality-card">
+          <div class="speciality-card__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 14-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+          </div>
+          <h3>Diagnostics</h3>
+          <p>In-house lab, X-ray, ultrasound, and health check packages with same-day reports.</p>
+        </article>
+
+        <article class="speciality-card">
+          <div class="speciality-card__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+          </div>
+          <h3>Dental Care</h3>
+          <p>Cleaning, root canal, implants, and cosmetic dentistry with painless techniques.</p>
+        </article>
+
+        <article class="speciality-card speciality-card--more">
+          <h3>+ 7 more specialities</h3>
+          <p>Neurology, ENT, Ophthalmology, Gynaecology, Gastro, Psychiatry &amp; more.</p>
+          <a href="#booking">View all &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why__grid">
+        <div class="why__left">
+          <span class="section-badge">Why families choose Aether</span>
+          <h2>More than a clinic.<br>A partner in your health journey.</h2>
+          <p>We've rebuilt the clinic experience from the ground up — designed around what patients actually need: shorter waits, calmer spaces, doctors who listen, and a single digital health record that travels with you.</p>
+
+          <div class="why__features">
+            <div class="why-feature">
+              <div class="why-feature__icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              </div>
+              <div>
+                <h4>Same-day appointments</h4>
+                <p>Call before 11 AM, see a doctor the same day — guaranteed.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature__icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+              </div>
+              <div>
+                <h4>Board-certified doctors</h4>
+                <p>Every physician is verified, experienced, and patient-reviewed.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature__icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
+              </div>
+              <div>
+                <h4>Digital health records</h4>
+                <p>Your prescriptions, reports, and history — all in one secure app.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature__icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+              </div>
+              <div>
+                <h4>Easy access &amp; parking</h4>
+                <p>Ground-floor access, lift, and 30+ parking spots — wheelchair friendly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="why__right">
+          <div class="why__stats">
+            <div class="why-stat">
+              <div class="why-stat__num">15+</div>
+              <div class="why-stat__label">Years of trusted care</div>
+            </div>
+            <div class="why-stat">
+              <div class="why-stat__num">98%</div>
+              <div class="why-stat__label">Patient satisfaction score</div>
+            </div>
+            <div class="why-stat">
+              <div class="why-stat__num">24/7</div>
+              <div class="why-stat__label">Emergency response</div>
+            </div>
+            <div class="why-stat">
+              <div class="why-stat__num">5 min</div>
+              <div class="why-stat__label">Average wait time</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors -->
+  <section class="section doctors" id="doctors">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-badge">Meet our doctors</span>
+        <h2>Experienced hands. Compassionate hearts.</h2>
+        <p>Our team brings together specialists from India's top institutions — AIIMS, JIPMER, CMC Vellore — united by one philosophy: treat every patient like family.</p>
+      </div>
+
+      <div class="doctors__grid">
+        <article class="doctor-card">
+          <div class="doctor-card__photo" style="background: linear-gradient(135deg, #0ea5e9, #0369a1);">
+            <span>Dr. AR</span>
+          </div>
+          <h3>Dr. Anjali Raman</h3>
+          <p class="doctor-card__role">Cardiologist · MD, DM</p>
+          <p class="doctor-card__exp">18 years · 12,000+ patients</p>
+          <div class="doctor-card__rating">
+            <span class="stars">★★★★★</span>
+            <span>4.9 (820 reviews)</span>
+          </div>
+          <a href="#booking" class="btn btn--ghost btn--block btn--sm">Book with Dr. Anjali</a>
+        </article>
+
+        <article class="doctor-card">
+          <div class="doctor-card__photo" style="background: linear-gradient(135deg, #06b6d4, #0e7490);">
+            <span>Dr. SK</span>
+          </div>
+          <h3>Dr. Suresh Kumar</h3>
+          <p class="doctor-card__role">Pediatrician · MD (Paed)</p>
+          <p class="doctor-card__exp">14 years · 18,000+ children</p>
+          <div class="doctor-card__rating">
+            <span class="stars">★★★★★</span>
+            <span>5.0 (1,240 reviews)</span>
+          </div>
+          <a href="#booking" class="btn btn--ghost btn--block btn--sm">Book with Dr. Suresh</a>
+        </article>
+
+        <article class="doctor-card">
+          <div class="doctor-card__photo" style="background: linear-gradient(135deg, #0284c7, #075985);">
+            <span>Dr. PV</span>
+          </div>
+          <h3>Dr. Priya Venkat</h3>
+          <p class="doctor-card__role">Dermatologist · MD (Derma)</p>
+          <p class="doctor-card__exp">11 years · 9,000+ patients</p>
+          <div class="doctor-card__rating">
+            <span class="stars">★★★★★</span>
+            <span>4.9 (610 reviews)</span>
+          </div>
+          <a href="#booking" class="btn btn--ghost btn--block btn--sm">Book with Dr. Priya</a>
+        </article>
+
+        <article class="doctor-card">
+          <div class="doctor-card__photo" style="background: linear-gradient(135deg, #0891b2, #155e75);">
+            <span>Dr. MK</span>
+          </div>
+          <h3>Dr. Manoj Krishnan</h3>
+          <p class="doctor-card__role">Orthopedic Surgeon · MS, DNB</p>
+          <p class="doctor-card__exp">20 years · 5,000+ surgeries</p>
+          <div class="doctor-card__rating">
+            <span class="stars">★★★★★</span>
+            <span>4.8 (480 reviews)</span>
+          </div>
+          <a href="#booking" class="btn btn--ghost btn--block btn--sm">Book with Dr. Manoj</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="booking__inner">
+        <div class="booking__left">
+          <span class="section-badge">Book an appointment</span>
+          <h2>Skip the wait. Get seen faster.</h2>
+          <p>Book online in under 60 seconds. Choose your doctor, pick a time slot that works, and we'll send a WhatsApp confirmation instantly. Walk-ins welcome too — but booking saves your spot.</p>
+          <ul class="booking__list">
+            <li>Same-day appointments available</li>
+            <li>WhatsApp + SMS confirmation</li>
+            <li>Reschedule anytime, no fees</li>
+            <li>Cashless insurance accepted</li>
+          </ul>
+        </div>
+        <form class="booking__form" id="bookingForm">
+          <h3>Reserve your slot</h3>
+          <div class="booking__form-row">
+            <select aria-label="Speciality" required>
+              <option value="">Choose speciality *</option>
+              <option>General Medicine</option>
+              <option>Cardiology</option>
+              <option>Pediatrics</option>
+              <option>Orthopedics</option>
+              <option>Dermatology</option>
+              <option>Dental</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="booking__form-row">
+            <input type="text" placeholder="Full name *" required />
+            <input type="tel" placeholder="Phone number *" required />
+          </div>
+          <div class="booking__form-row">
+            <input type="date" aria-label="Preferred date" required />
+            <select aria-label="Preferred time">
+              <option value="">Any time</option>
+              <option>Morning (8 AM – 12 PM)</option>
+              <option>Afternoon (12 – 4 PM)</option>
+              <option>Evening (4 – 9 PM)</option>
+            </select>
+          </div>
+          <textarea placeholder="Briefly describe your symptoms (optional)" rows="3"></textarea>
+          <button type="submit" class="btn btn--primary btn--block btn--lg">Confirm appointment</button>
+          <p class="booking__note">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            HIPAA-compliant. We never share your data.
+          </p>
+          <div class="booking__success" id="bookingSuccess" hidden>
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="#10b981"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <h3>Appointment requested!</h3>
+            <p>We'll call you within 15 minutes to confirm your slot.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-badge">Visit us</span>
+        <h2>Find us, reach us, anytime</h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+          </div>
+          <h3>Visit our clinic</h3>
+          <p>123 Mount Road, Teynampet,<br>Chennai, Tamil Nadu 600018</p>
+          <a href="#" class="contact-card__link">Get directions &rarr;</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.25l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+          </div>
+          <h3>Call us</h3>
+          <p>Appointments: <a href="tel:+914412345678">+91 44 1234 5678</a><br>Emergency: <a href="tel:+919876543210" class="contact-card__emergency">+91 98765 43210</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+          </div>
+          <h3>Opening hours</h3>
+          <p>Mon – Sat: 8 AM – 9 PM<br>Sunday: 9 AM – 1 PM<br><strong>Emergency: 24/7</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="nav__logo">
+            <div class="nav__logo-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+            </div>
+            <div>
+              <div class="nav__logo-text">Aether</div>
+              <div class="nav__logo-sub">Medical Clinic</div>
+            </div>
+          </div>
+          <p>Compassionate care, advanced medicine.<br>Serving Chennai since 2009.</p>
+        </div>
+        <div class="footer__cta">
+          <a href="#booking" class="btn btn--primary btn--lg">Book appointment</a>
+          <a href="tel:+914412345678" class="btn btn--ghost">Call clinic</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Aether Medical Clinic. This is a demo site by Pixel Forge.</p>
+        <a href="../../index.html" class="footer__back">← Back to Pixel Forge</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="tel:+914412345678" class="float-call" id="floatCall" aria-label="Call clinic">
+    <span class="float-call__pulse"></span>
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.25l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+    <span>Call clinic</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="description" content="Pixel Forge builds premium websites for clinics, gyms, and local businesses. Fast, beautiful, conversion-focused — with optional workflow automation to save you 10+ hours a week." />
+  <title>Pixel Forge — Premium Websites for Clinics, Gyms & Local Businesses</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Top announcement bar (psychology: scarcity + urgency) -->
+  <div class="announcement" id="announcement">
+    <div class="container announcement__inner">
+      <span class="announcement__dot"></span>
+      <span class="announcement__text">
+        <strong>Only 2 project slots left</strong> for November 2025 — book your free audit today
+      </span>
+      <a href="#contact" class="announcement__cta">Claim slot &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo">
+        <img src="assets/logo.png" alt="Pixel Forge logo" class="nav__logo-img" />
+        <span class="nav__logo-text">PIXEL<span class="nav__logo-accent">FORGE</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#team">About</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="tel:+919361905070" class="nav__phone">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.25l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+          <span>+91 93619 05070</span>
+        </a>
+        <a href="#contact" class="btn btn--primary btn--sm">Start project</a>
+        <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" id="navToggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <div class="mobile-menu__head">
+        <span class="nav__logo-text">PIXEL<span class="nav__logo-accent">FORGE</span></span>
+        <button class="nav__toggle nav__toggle--close" aria-label="Close menu" id="navClose">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Mobile navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#team">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn--primary">Start project</a>
+        <a href="tel:+919361905070" class="btn btn--ghost">Call +91 93619 05070</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+      <div class="hero__grid"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="pulse-dot"></span>
+          Premium web studio · India
+        </div>
+
+        <h1 class="hero__title">
+          Your website should be your<br>
+          <span class="gradient-text">best salesperson.</span><br>
+          Is it?
+        </h1>
+
+        <p class="hero__sub">
+          We build premium, conversion-focused websites for <strong>clinics, gyms</strong>, and local businesses — paired with optional workflow automation that saves you 10+ hours every week. Built by <strong>R. Dinesh</strong> and <strong>Vasanth Kumar P</strong>.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn--primary btn--lg">
+            Get your free website audit
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M5 12h12v-2H5v2zm-1 4h14v-2H4v2zM4 6v2h10V6H4z"/></svg>
+          </a>
+          <a href="#work" class="btn btn--ghost btn--lg">See our work</a>
+        </div>
+
+        <div class="hero__proof">
+          <div class="hero__avatars">
+            <span class="hero__avatar" style="background: linear-gradient(135deg,#22d3ee,#3b82f6);">D</span>
+            <span class="hero__avatar" style="background: linear-gradient(135deg,#e879f9,#a855f7);">V</span>
+            <span class="hero__avatar" style="background: linear-gradient(135deg,#34d399,#06b6d4);">A</span>
+            <span class="hero__avatar" style="background: linear-gradient(135deg,#fbbf24,#f97316);">K</span>
+            <span class="hero__avatar hero__avatar--plus">+28</span>
+          </div>
+          <div class="hero__proof-text">
+            <strong>32+ local businesses</strong> trust us with their online presence
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="browser-mockup">
+          <div class="browser-mockup__bar">
+            <span class="browser-mockup__dot" style="background:#ff5f57"></span>
+            <span class="browser-mockup__dot" style="background:#febc2e"></span>
+            <span class="browser-mockup__dot" style="background:#28c840"></span>
+            <div class="browser-mockup__url">your-clinic.com</div>
+          </div>
+          <div class="browser-mockup__content">
+            <div class="mock-hero">
+              <div class="mock-badge"></div>
+              <div class="mock-line mock-line--lg"></div>
+              <div class="mock-line mock-line--md"></div>
+              <div class="mock-line mock-line--sm"></div>
+              <div class="mock-cta"></div>
+              <div class="mock-grid">
+                <div class="mock-card"></div>
+                <div class="mock-card"></div>
+                <div class="mock-card"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-card floating-card--top">
+          <div class="floating-card__icon" style="background:linear-gradient(135deg,#34d399,#06b6d4);">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="white"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          </div>
+          <div>
+            <div class="floating-card__title">100/100</div>
+            <div class="floating-card__sub">Lighthouse score</div>
+          </div>
+        </div>
+
+        <div class="floating-card floating-card--bottom">
+          <div class="floating-card__icon" style="background:linear-gradient(135deg,#22d3ee,#a855f7);">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="white"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+          </div>
+          <div>
+            <div class="floating-card__title">+38%</div>
+            <div class="floating-card__sub">Avg. conversion lift</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust strip -->
+    <div class="container">
+      <div class="trust-strip">
+        <div class="trust-strip__label">Built for businesses that demand excellence</div>
+        <div class="trust-strip__logos">
+          <span>CLINICS</span>
+          <span>GYMS</span>
+          <span>SALONS</span>
+          <span>RESTAURANTS</span>
+          <span>DENTISTS</span>
+          <span>WELLNESS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM SECTION -->
+  <section class="problem">
+    <div class="container">
+      <div class="problem__grid">
+        <div class="problem__left">
+          <div class="section-badge">The painful truth</div>
+          <h2 class="section-title">
+            Every day without a great website,<br>
+            <span class="gradient-text">you're losing customers.</span>
+          </h2>
+          <p class="section-lead">
+            A visitor lands on your site. It loads slowly. The layout feels dated. They can't find your phone number in 5 seconds. They leave — and book with your competitor instead. Sound familiar?
+          </p>
+        </div>
+        <div class="problem__right">
+          <div class="problem-stat">
+            <div class="problem-stat__num">88%</div>
+            <div class="problem-stat__label">of visitors won't return to a site with a bad experience</div>
+          </div>
+          <div class="problem-stat">
+            <div class="problem-stat__num">3 sec</div>
+            <div class="problem-stat__label">is all it takes for visitors to judge your business by your site</div>
+          </div>
+          <div class="problem-stat">
+            <div class="problem-stat__num">68%</div>
+            <div class="problem-stat__label">of mobile users leave sites that aren't mobile-optimized</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-badge">What we do</div>
+        <h2 class="section-title">
+          Premium websites, <span class="gradient-text">plus automation</span>
+        </h2>
+        <p class="section-lead">
+          Our core craft is building websites that convert visitors into customers. We also offer optional workflow automation so your bookings, follow-ups, and reminders run themselves — but websites come first, always.
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <!-- Primary services -->
+        <article class="service-card service-card--primary">
+          <div class="service-card__tag">Most popular</div>
+          <div class="service-card__icon" style="background:linear-gradient(135deg,#22d3ee,#3b82f6);">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Premium Website Design</h3>
+          <p>A custom-designed, mobile-first website that looks like it cost ₹5 lakh — without the agency overhead. Built to convert, rank on Google, and load in under a second.</p>
+          <ul>
+            <li>Custom design in Figma</li>
+            <li>Next-gen performance (sub-1s load)</li>
+            <li>SEO foundation included</li>
+            <li>Mobile-first &amp; accessible</li>
+            <li>Easy CMS to edit yourself</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__time">2–6 weeks delivery</span>
+            <a href="#pricing" class="service-card__cta">See pricing &rarr;</a>
+          </div>
+        </article>
+
+        <article class="service-card service-card--primary">
+          <div class="service-card__icon" style="background:linear-gradient(135deg,#e879f9,#a855f7);">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Production-grade code: Next.js, TypeScript, headless CMS. Booking systems, member portals, online payments — all built to scale without breaking.</p>
+          <ul>
+            <li>Custom booking &amp; scheduling</li>
+            <li>Online payments (Razorpay/Stripe)</li>
+            <li>Member login &amp; portals</li>
+            <li>WhatsApp &amp; email integration</li>
+            <li>Analytics &amp; conversion tracking</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__time">4–10 weeks delivery</span>
+            <a href="#pricing" class="service-card__cta">See pricing &rarr;</a>
+          </div>
+        </article>
+
+        <article class="service-card service-card--primary">
+          <div class="service-card__icon" style="background:linear-gradient(135deg,#34d399,#06b6d4);">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94 0 .31.04.64.09.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.04.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.21.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6 0-1.98 1.62-3.6 3.6-3.6 1.98 0 3.6 1.62 3.6 3.6 0 1.98-1.62 3.6-3.6 3.6z"/></svg>
+          </div>
+          <h3>SEO &amp; Local Visibility</h3>
+          <p>Get found on Google when patients, members, or customers search for businesses like yours nearby. We optimize technical SEO, Google Business Profile, and local rankings.</p>
+          <ul>
+            <li>Local SEO for "near me" searches</li>
+            <li>Google Business Profile setup</li>
+            <li>Technical SEO audit &amp; fixes</li>
+            <li>Review management system</li>
+            <li>Monthly ranking reports</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__time">Ongoing</span>
+            <a href="#pricing" class="service-card__cta">See pricing &rarr;</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Secondary: Workflow automation -->
+      <div class="services__secondary">
+        <div class="services__secondary-head">
+          <div class="services__secondary-tag">Add-on service</div>
+          <h3>Workflow Automation — work less, grow more</h3>
+          <p>Once your website is winning customers, automate the boring stuff. Optional add-on for any web project — not a replacement for great design.</p>
+        </div>
+        <div class="automation-grid">
+          <div class="automation-item">
+            <div class="automation-item__icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <div>
+              <strong>Automated appointment reminders</strong>
+              <p>WhatsApp + SMS reminders cut no-shows by 60%+</p>
+            </div>
+          </div>
+          <div class="automation-item">
+            <div class="automation-item__icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <div>
+              <strong>Lead capture &amp; auto-follow-up</strong>
+              <p>New leads get an instant reply 24/7, even while you sleep</p>
+            </div>
+          </div>
+          <div class="automation-item">
+            <div class="automation-item__icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <div>
+              <strong>Invoice &amp; payment automation</strong>
+              <p>Recurring billing, receipts, and renewal reminders — hands-free</p>
+            </div>
+          </div>
+          <div class="automation-item">
+            <div class="automation-item__icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <div>
+              <strong>Review request automation</strong>
+              <p>Happy customers get a Google review link automatically</p>
+            </div>
+          </div>
+        </div>
+        <p class="services__secondary-note">
+          <em>Note:</em> Workflow automation works best <strong>after</strong> your website is built. We recommend it as a phase 2 add-on, not a replacement for solid design.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / PORTFOLIO SHOWCASE -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-badge">Our work</div>
+        <h2 class="section-title">
+          Live demos you can <span class="gradient-text">click and explore</span>
+        </h2>
+        <p class="section-lead">
+          We built three complete demo websites to show you exactly what we can deliver. Each one targets a different industry — explore them, click around, and imagine your business with a site like this.
+        </p>
+      </div>
+
+      <div class="work__grid">
+        <article class="work-card" data-demo="clinic">
+          <div class="work-card__preview work-card__preview--clinic">
+            <div class="demo-mini demo-mini--clinic">
+              <div class="demo-mini__hero">
+                <div class="demo-mini__title"></div>
+                <div class="demo-mini__btn"></div>
+              </div>
+              <div class="demo-mini__cards">
+                <div class="demo-mini__card"></div>
+                <div class="demo-mini__card"></div>
+                <div class="demo-mini__card"></div>
+              </div>
+            </div>
+            <div class="work-card__overlay">
+              <a href="demos/clinic/index.html" class="btn btn--primary btn--sm">Open live demo &rarr;</a>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <div class="work-card__tags">
+              <span class="work-card__tag">Clinic</span>
+              <span class="work-card__tag">Booking</span>
+              <span class="work-card__tag">Healthcare</span>
+            </div>
+            <h3>Aether Medical Clinic</h3>
+            <p>A premium multi-speciality clinic site with online appointment booking, doctor profiles, and a calming trustworthy design.</p>
+            <a href="demos/clinic/index.html" class="work-card__link">View live demo <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg></a>
+          </div>
+        </article>
+
+        <article class="work-card" data-demo="gym">
+          <div class="work-card__preview work-card__preview--gym">
+            <div class="demo-mini demo-mini--gym">
+              <div class="demo-mini__hero">
+                <div class="demo-mini__title"></div>
+                <div class="demo-mini__btn"></div>
+              </div>
+              <div class="demo-mini__cards">
+                <div class="demo-mini__card"></div>
+                <div class="demo-mini__card"></div>
+                <div class="demo-mini__card"></div>
+              </div>
+            </div>
+            <div class="work-card__overlay">
+              <a href="demos/gym/index.html" class="btn btn--primary btn--sm">Open live demo &rarr;</a>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <div class="work-card__tags">
+              <span class="work-card__tag">Gym</span>
+              <span class="work-card__tag">Membership</span>
+              <span class="work-card__tag">Fitness</span>
+            </div>
+            <h3>Iron Pulse Fitness</h3>
+            <p>A bold, high-energy gym site with membership pricing, class schedules, trainer profiles, and a powerful "Join Now" conversion flow.</p>
+            <a href="demos/gym/index.html" class="work-card__link">View live demo <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg></a>
+          </div>
+        </article>
+
+        <article class="work-card" data-demo="salon">
+          <div class="work-card__preview work-card__preview--salon">
+            <div class="demo-mini demo-mini--salon">
+              <div class="demo-mini__hero">
+                <div class="demo-mini__title"></div>
+                <div class="demo-mini__btn"></div>
+              </div>
+              <div class="demo-mini__cards">
+                <div class="demo-mini__card"></div>
+                <div class="demo-mini__card"></div>
+                <div class="demo-mini__card"></div>
+              </div>
+            </div>
+            <div class="work-card__overlay">
+              <a href="demos/salon/index.html" class="btn btn--primary btn--sm">Open live demo &rarr;</a>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <div class="work-card__tags">
+              <span class="work-card__tag">Salon</span>
+              <span class="work-card__tag">Luxury</span>
+              <span class="work-card__tag">Beauty</span>
+            </div>
+            <h3>Lumière Salon &amp; Spa</h3>
+            <p>A luxurious salon and spa site with elegant gold accents, treatment gallery, pricing tiers, and a frictionless online booking experience.</p>
+            <a href="demos/salon/index.html" class="work-card__link">View live demo <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="work__note">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+        <span>These are full demo sites built by us — not screenshots. Click any card to explore the real thing.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-badge">How we work</div>
+        <h2 class="section-title">
+          From idea to launch in <span class="gradient-text">four steps</span>
+        </h2>
+        <p class="section-lead">
+          A clear, predictable process with weekly previews. You always know what's happening, what's next, and what you owe — no surprises, no scope creep.
+        </p>
+      </div>
+
+      <div class="process__grid">
+        <div class="process-step">
+          <div class="process-step__num">01</div>
+          <div class="process-step__body">
+            <span class="process-step__time">Week 1</span>
+            <h3>Free Discovery Call</h3>
+            <p>We dig into your business, customers, and competitors. You walk away with a free website audit and a clear plan — even if you don't hire us.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step__num">02</div>
+          <div class="process-step__body">
+            <span class="process-step__time">Week 2–3</span>
+            <h3>Design &amp; Approve</h3>
+            <p>We design your site in Figma. You review every screen, leave comments, and approve before a single line of code is written.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step__num">03</div>
+          <div class="process-step__body">
+            <span class="process-step__time">Week 3–6</span>
+            <h3>Develop &amp; Preview</h3>
+            <p>Your design becomes a fast, accessible website. We share weekly live previews so you can click around as it takes shape.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step__num">04</div>
+          <div class="process-step__body">
+            <span class="process-step__time">Launch + 30 days</span>
+            <h3>Launch &amp; Support</h3>
+            <p>We go live on your domain, train you on the CMS, hand over the codebase, and support you free for 30 days. You own everything.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE (replaces testimonials) -->
+  <section class="guarantee">
+    <div class="container">
+      <div class="guarantee__grid">
+        <div class="guarantee__left">
+          <div class="section-badge">Our promise</div>
+          <h2 class="section-title">
+            We take all the risk.<br>
+            <span class="gradient-text">You take all the upside.</span>
+          </h2>
+          <p class="section-lead">
+            We don't have to fake testimonials because we back our work with real guarantees. Here's what you get when you work with us.
+          </p>
+        </div>
+        <div class="guarantee__right">
+          <div class="guarantee-card">
+            <div class="guarantee-card__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <h3>100% Money-back Guarantee</h3>
+            <p>If you don't love the design after our first revision round, you get a full refund — no questions, no awkwardness.</p>
+          </div>
+          <div class="guarantee-card">
+            <div class="guarantee-card__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 45l-.65-.46C5.4 40.04 2 33.36 2 26.16V8.6l1.13-.34C7.7 6.66 11.32 4 12 4s4.3 2.66 8.87 4.27L22 8.6v17.56c0 7.2-3.4 13.88-9.35 18.38L12 45z"/></svg>
+            </div>
+            <h3>30 Days Free Support</h3>
+            <p>After launch, we're on call for 30 days — bug fixes, tweaks, and questions, all included. No invoice for small changes.</p>
+          </div>
+          <div class="guarantee-card">
+            <div class="guarantee-card__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm-9 14-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <h3>You Own Everything</h3>
+            <p>Code, designs, domain, hosting — all yours. We hand over the keys on launch day. No vendor lock-in, ever.</p>
+          </div>
+          <div class="guarantee-card">
+            <div class="guarantee-card__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M11 17h2v-3h3v-2h-3V9h-2v3H8v2h3v3zM5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg>
+            </div>
+            <h3>Fixed Price, Fixed Timeline</h3>
+            <p>The quote you accept is the price you pay. No surprise invoices, no scope creep fees, no "that wasn't included" conversations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-badge">Pricing</div>
+        <h2 class="section-title">
+          Transparent pricing. <span class="gradient-text">No hidden fees.</span>
+        </h2>
+        <p class="section-lead">
+          Pick a package that fits your stage. All prices include design, development, mobile optimization, and 30-day post-launch support.
+        </p>
+      </div>
+
+      <div class="pricing__grid">
+        <article class="price-card">
+          <div class="price-card__head">
+            <h3>Starter</h3>
+            <p>For new businesses that need to look professional fast.</p>
+          </div>
+          <div class="price-card__price">
+            <span class="price-card__amount">₹49,000</span>
+            <span class="price-card__note">one-time</span>
+          </div>
+          <ul class="price-card__features">
+            <li>5-page custom website</li>
+            <li>Mobile-first responsive design</li>
+            <li>Contact form &amp; WhatsApp</li>
+            <li>Basic SEO setup</li>
+            <li>Google Analytics</li>
+            <li>2-week delivery</li>
+            <li>30-day free support</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--block">Get started</a>
+        </article>
+
+        <article class="price-card price-card--featured">
+          <div class="price-card__ribbon">Most popular</div>
+          <div class="price-card__head">
+            <h3>Growth</h3>
+            <p>For clinics, gyms &amp; salons that want to dominate locally.</p>
+          </div>
+          <div class="price-card__price">
+            <span class="price-card__amount">₹1,20,000</span>
+            <span class="price-card__note">one-time</span>
+          </div>
+          <ul class="price-card__features">
+            <li>Everything in Starter, plus:</li>
+            <li>Up to 12 pages</li>
+            <li><strong>Online booking system</strong></li>
+            <li>Online payments (Razorpay)</li>
+            <li>Advanced local SEO</li>
+            <li>Google Business Profile optimization</li>
+            <li>Review request automation</li>
+            <li>4–6 week delivery</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--block">Get started</a>
+        </article>
+
+        <article class="price-card">
+          <div class="price-card__head">
+            <h3>Premium + Automation</h3>
+            <p>For businesses that want the website AND the workflow automation.</p>
+          </div>
+          <div class="price-card__price">
+            <span class="price-card__amount">₹2,50,000+</span>
+            <span class="price-card__note">one-time</span>
+          </div>
+          <ul class="price-card__features">
+            <li>Everything in Growth, plus:</li>
+            <li>Member portal / login</li>
+            <li><strong>Workflow automation</strong> add-on</li>
+            <li>WhatsApp/SMS automation</li>
+            <li>Automated invoicing &amp; receipts</li>
+            <li>Lead nurture sequences</li>
+            <li>6–10 week delivery</li>
+            <li>90-day free support</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--block">Get started</a>
+        </article>
+      </div>
+
+      <p class="pricing__note">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+        Not sure which fits? <a href="#contact">Book a free call</a> and we'll recommend the right package based on your business. No pressure, no upsell.
+      </p>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-badge">Who you'll work with</div>
+        <h2 class="section-title">
+          Two founders. <span class="gradient-text">Zero handoffs.</span>
+        </h2>
+        <p class="section-lead">
+          When you hire Pixel Forge, you hire us — R. Dinesh and Vasanth Kumar P. You talk to the people doing the work, every single call. No account managers, no junior devs learning on your dime.
+        </p>
+      </div>
+
+      <div class="team__grid">
+        <article class="team-card">
+          <div class="team-card__avatar" style="background:linear-gradient(135deg,#22d3ee,#3b82f6);">
+            <span>R</span>
+            <div class="team-card__status"></div>
+          </div>
+          <h3 class="team-card__name">R. Dinesh</h3>
+          <p class="team-card__role">Founder &middot; Lead Developer</p>
+          <p class="team-card__bio">
+            Full-stack engineer obsessed with performance and clean architecture. Ships Next.js apps that score 100/100 on Lighthouse and load in under a second on 4G. Believes great code is invisible — it just works.
+          </p>
+          <div class="team-card__skills">
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+            <span>Stripe</span>
+          </div>
+          <div class="team-card__social">
+            <a href="mailto:rdineshd176@gmail.com" aria-label="Email R. Dinesh">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-card__avatar" style="background:linear-gradient(135deg,#e879f9,#a855f7);">
+            <span>V</span>
+            <div class="team-card__status"></div>
+          </div>
+          <h3 class="team-card__name">Vasanth Kumar P</h3>
+          <p class="team-card__role">Founder &middot; Lead Designer</p>
+          <p class="team-card__bio">
+            Designer at the intersection of brand, UX, and motion. Crafts design systems that scale, micro-interactions that delight, and landing pages that convert. Previously designed for SaaS startups and D2C brands across India.
+          </p>
+          <div class="team-card__skills">
+            <span>Figma</span>
+            <span>Webflow</span>
+            <span>Framer</span>
+            <span>Branding</span>
+            <span>Motion</span>
+          </div>
+          <div class="team-card__social">
+            <a href="mailto:rdineshd176@gmail.com" aria-label="Email Vasanth">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq__grid">
+        <div class="faq__left">
+          <div class="section-badge">Questions</div>
+          <h2 class="section-title">
+            Things founders <span class="gradient-text">always ask.</span>
+          </h2>
+          <p class="section-lead">
+            Real questions from discovery calls. If yours isn't here, just send us a message — we usually reply within a few hours.
+          </p>
+          <a href="#contact" class="btn btn--ghost btn--sm">Ask your question &rarr;</a>
+        </div>
+        <div class="faq__right">
+          <div class="faq-list" id="faqList">
+            <details class="faq-item" open>
+              <summary>How much does a website cost?</summary>
+              <div class="faq-item__answer">
+                Most projects land between ₹49,000 and ₹2,50,000 depending on scope. A starter 5-page site is ₹49,000; a full clinic or gym site with online booking is ₹1,20,000; the premium package with automation starts at ₹2,50,000. After our free call, you get a fixed, itemized quote — no surprise invoices, ever.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>How long does a project take?</summary>
+              <div class="faq-item__answer">
+                A starter site: 2 weeks. A growth site with booking: 4–6 weeks. A premium site with automation: 6–10 weeks. We share weekly progress previews so you always know exactly where things stand.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>I'm a doctor / gym owner. Can you build for my industry?</summary>
+              <div class="faq-item__answer">
+                That's our specialty. We've designed demo sites for clinics, gyms, and salons specifically because we understand the conversion patterns, compliance needs, and booking flows that work in those industries. Check our work section to see live demos for each.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Do you handle the domain and hosting?</summary>
+              <div class="faq-item__answer">
+                Yes — we'll set up your domain (or migrate an existing one), configure hosting on Vercel or your preferred provider, and handle SSL, DNS, and email setup. You own all accounts; we just configure them for you.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Will I own the website after launch?</summary>
+              <div class="faq-item__answer">
+                Completely. You own 100% of the codebase, Figma designs, domain, hosting, and content. We hand over a private GitHub repo and Figma transfer on launch day. No vendor lock-in, no hostage situations.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What is workflow automation and do I need it?</summary>
+              <div class="faq-item__answer">
+                Workflow automation connects your website to tools like WhatsApp, your CRM, and your calendar — so bookings, reminders, follow-ups, and invoices happen automatically. We recommend it as a phase 2 add-on <em>after</em> your website is built. Most businesses don't need it from day one.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What if I don't like the design?</summary>
+              <div class="faq-item__answer">
+                Our design phase includes two structured revision rounds built into the timeline, and we share weekly previews so feedback lands early. If we ever miss the mark after revisions, we'll redesign until you're happy — or refund your money. That's our promise.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Can you fix my existing website?</summary>
+              <div class="faq-item__answer">
+                Yes. We offer a free website audit covering performance, SEO, accessibility, and conversion. From there you get a prioritized fix list — and you decide whether to fix in place or rebuild from scratch.
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__left">
+          <div class="section-badge">Let's talk</div>
+          <h2 class="section-title">
+            Tell us about <span class="gradient-text">your project.</span>
+          </h2>
+          <p class="section-lead">
+            Fill the form, call, or WhatsApp — whatever's easier. Free 30-minute discovery call. We'll review your business, sketch a rough plan, and tell you honestly if we're the right fit.
+          </p>
+
+          <div class="contact__info">
+            <a href="tel:+919361905070" class="contact-info-card">
+              <div class="contact-info-card__icon" style="background:linear-gradient(135deg,#22d3ee,#3b82f6);">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.25l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+              </div>
+              <div>
+                <span class="contact-info-card__label">Call us</span>
+                <span class="contact-info-card__value">+91 93619 05070</span>
+              </div>
+            </a>
+            <a href="mailto:rdineshd176@gmail.com" class="contact-info-card">
+              <div class="contact-info-card__icon" style="background:linear-gradient(135deg,#e879f9,#a855f7);">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div>
+                <span class="contact-info-card__label">Email us</span>
+                <span class="contact-info-card__value">rdineshd176@gmail.com</span>
+              </div>
+            </a>
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon" style="background:linear-gradient(135deg,#34d399,#06b6d4);">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+              </div>
+              <div>
+                <span class="contact-info-card__label">Based in</span>
+                <span class="contact-info-card__value">Tamil Nadu, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="availability-badge">
+            <span class="pulse-dot pulse-dot--green"></span>
+            <div>
+              <strong>Available for new projects</strong>
+              <span>Booking November 2025 · 2 slots left</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3 class="contact-form__title">Get your free website audit</h3>
+          <p class="contact-form__sub">We'll review your current site (or idea) and send a 10-minute Loom with 5 things you can fix today — free.</p>
+
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label for="name">Your name *</label>
+              <input type="text" id="name" name="name" placeholder="R. Dinesh" required />
+            </div>
+            <div class="contact-form__field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="you@business.com" required />
+            </div>
+          </div>
+
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 90000 00000" />
+            </div>
+            <div class="contact-form__field">
+              <label for="business">Business type</label>
+              <select id="business" name="business">
+                <option value="">Select one</option>
+                <option>Clinic / Healthcare</option>
+                <option>Gym / Fitness</option>
+                <option>Salon / Spa</option>
+                <option>Restaurant</option>
+                <option>Other local business</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="contact-form__field">
+            <label for="budget">Budget range</label>
+            <select id="budget" name="budget">
+              <option value="">Select range</option>
+              <option>Under ₹50,000</option>
+              <option>₹50,000 – ₹1,20,000</option>
+              <option>₹1,20,000 – ₹2,50,000</option>
+              <option>₹2,50,000+</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="contact-form__field">
+            <label for="message">Tell us about your project *</label>
+            <textarea id="message" name="message" rows="4" placeholder="What do you do? What's your goal? Any links to your current site or competitors you like?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block btn--lg">
+            Get my free audit
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+          </button>
+
+          <p class="contact-form__note">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            No spam, ever. We reply to every inquiry within a few working hours.
+          </p>
+
+          <div class="contact-form__success" id="formSuccess" hidden>
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="#34d399"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <h3>Thank you! Message received.</h3>
+            <p>We'll get back to you within a few hours. For urgent matters, call <a href="tel:+919361905070">+91 93619 05070</a>.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">
+            <img src="assets/logo.png" alt="Pixel Forge logo" />
+            <span class="nav__logo-text">PIXEL<span class="nav__logo-accent">FORGE</span></span>
+          </a>
+          <p>Premium websites for clinics, gyms, and local businesses. Built by R. Dinesh and Vasanth Kumar P.</p>
+          <div class="footer__contact">
+            <a href="tel:+919361905070">+91 93619 05070</a>
+            <a href="mailto:rdineshd176@gmail.com">rdineshd176@gmail.com</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Navigate</h4>
+          <a href="#services">Services</a>
+          <a href="#work">Our Work</a>
+          <a href="#process">Process</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#team">About</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <a href="#services">Website Design</a>
+          <a href="#services">Web Development</a>
+          <a href="#services">SEO &amp; Local Visibility</a>
+          <a href="#services">Workflow Automation</a>
+        </div>
+        <div class="footer__col">
+          <h4>Demo Sites</h4>
+          <a href="demos/clinic/index.html">Aether Clinic</a>
+          <a href="demos/gym/index.html">Iron Pulse Gym</a>
+          <a href="demos/salon/index.html">Lumière Salon</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Pixel Forge. All rights reserved. Built with care in India.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#contact">Start a project &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating mobile call button -->
+  <a href="tel:+919361905070" class="float-call" id="floatCall" aria-label="Call Pixel Forge">
+    <span class="float-call__pulse"></span>
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.25l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+    <span>Call now</span>
+  </a>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
